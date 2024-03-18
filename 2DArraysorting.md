@@ -199,3 +199,70 @@ class GFG {
 }
 
 ```
+# sorting list
+* Here is an example of how to use a comparator to sort a list of custom objects:
+```java
+import java.util.Collections;
+import java.util.List;
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        List<Person> people = new ArrayList<>();
+        people.add(new Person("Alice", 25));
+        people.add(new Person("Bob", 30));
+        people.add(new Person("Charlie", 20));
+        
+        Collections.sort(people, new PersonComparator());
+        
+        System.out.println("Sorted List: " + people);
+    }
+}
+
+class Person {
+    private String name;
+    private int age;
+    
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+    
+    public String getName() {
+        return name;
+    }
+    
+    public int getAge() {
+        return age;
+    }
+    
+    @Override
+    public String toString() {
+        return name + " (" + age + ")";
+    }
+}
+
+class PersonComparator implements java.util.Comparator<Person> {
+    @Override
+    public int compare(Person a, Person b) {
+        return a.getAge() - b.getAge();
+    }
+}
+```
+It's best to use the Collections.sort() method when you have a collection of objects that need to be sorted based on one or more fields.
+
+For example, if you have a collection of Employee objects and you want to sort them by their last name, you can use the Collections.sort() method and pass in a custom Comparator that compares the last names of the Employee objects.
+
+
+* Here is an example of how to sort a list of integers using a stream:
+```java
+public class Main {
+    public static void main(String[] args) {
+
+        List<Integer> numbers = Arrays.asList(5, 3, 2, 4, 1);
+        List<Integer> sortedList = numbers.stream().sorted().collect(Collectors.toList());
+        System.out.println(sortedList); // prints [1, 2, 3, 4, 5]
+
+    }
+}
+```
