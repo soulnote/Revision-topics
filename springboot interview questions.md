@@ -1,3 +1,4 @@
+# 1
 ### Interview Introduction
 - 👋 **Introduction**: Today's interview is with Raja Lakshmi Moan, who has four years of experience in Java and Spring Boot.
 - 📄 **Form**: Interested candidates for the same interview process can fill out the form below.
@@ -39,3 +40,42 @@
 
 ### Potential Areas for Improvement
 - 📚 **Learning**: Intends to gain hands-on knowledge in areas like security implementation before working on new projects.
+
+# 2
+### Key Points from the Interview
+
+- 👨‍💻 **Introduction:**
+  - Anit Kumar Davan with 3 years of experience in Java and Spring Boot.
+  - Based in Pune, working at Accenture.
+  - Experience with AWS, Bamboo, Sonar, and other tools.
+
+- 📞 **Project Details:**
+  - Working on an Australian telecommunications project.
+  - Involvement with Java, Spring Boot, and microservices.
+
+- 💻 **Technical Knowledge:**
+  - **Printing without `main` method:** Not aware initially; explained using a static block.
+  - **Static blocks:** Can have multiple; used for initializing static data members.
+  - **Finally block:** Ensures resource closure; only one per try-catch pair.
+  - **Collections:**
+    - Difference between ArrayList (ordered, allows duplicates) and Set (unordered, no duplicates).
+    - HashMap: Use of class as key with overridden `hashCode` and `equals` methods.
+  - **Reflection:** Not aware; explained it as a feature to modify methods, classes, and interfaces.
+  - **Functional Interfaces:** Explained and provided examples (Runnable, Comparator).
+  - **Stream API:**
+    - Difference between `filter` (reduces elements) and `map` (applies function to each element).
+  - **Spring Boot vs. Spring:**
+    - Spring Boot requires less configuration.
+    - Can change embedded server.
+    - Dependencies and bean scopes discussed.
+  - **Caching:** Not implemented.
+  - **Idempotent Methods:** Explained `GET`, `PUT`, `DELETE` for consistency.
+  - **Request Param vs. Path Variable:** Difference in capturing data from URL.
+  - **Annotations:** Various used (`@RestController`, `@RequestMapping`, etc.).
+  - **JPA Repository:** Provides database-related methods like `findAll`.
+  - **Design Patterns:** Explained Singleton pattern and how to prevent cloning by overriding the `clone` method.
+
+- 🌱 **Learning Points:**
+  - Functional interface cannot extend another interface with abstract methods.
+  - Singleton pattern prevention of cloning by overriding `clone` method and throwing an exception.
+# 3
